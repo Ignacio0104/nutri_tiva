@@ -1,0 +1,226 @@
+@font-face {
+	src: url(../fonts/bobbyjones/Bobby-Jones/Bobby-Jones-Soft.otf);
+	font-family: Nutrifont;
+}
+
+
+*{ 
+  font-size: 20px;
+ }
+
+body {
+	background-image: url(../images/fondo-nutritiva.png);
+	background-attachment: fixed;
+	background-size: 100% 100%;
+}
+
+.header_main {
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	justify-content: flex-end;
+	background: linear-gradient(47deg, rgba(207,33,70,1) 0%, rgba(193,195,231,1) 71%);
+	border-bottom: solid 2px #cf2146;
+	font-family: 'Bree Serif', serif;
+	border-top: solid 2px #cf2146;
+}
+
+
+.header_logo img {
+	width: 60px;
+	height: 60px;
+	border-radius: 3em;
+}
+.header_logo {
+	margin-right: auto;
+	padding: 8px;
+}
+
+.header_links a {
+	text-decoration: none;
+	color: #ed2084;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin: auto;
+}
+
+.header_links a:hover {
+	color: #057ea8;	
+}
+
+
+@media only screen and (max-width: 720px) {
+	.header_main {
+		display: flex;
+		flex-flow: row;
+		align-items: flex-start;
+		
+	}
+
+	.header_links {
+		display: flex;
+		flex-flow: column;
+		justify-content: flex-start;
+	}
+	.header_links a {
+		color: #ed2084;
+		padding: 10px;
+	}
+}
+
+.formulario_contenedor {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	width: 90vh;
+	height: 600px;
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	background: rgba(255,230,242,0.8);
+	padding: 20px;
+	border-radius: 20px;
+	font-family: 'Nerko One', cursive;
+}
+
+.titulo_formulario {
+	text-align: center;
+	font-family: Nutrifont;
+}
+
+
+.Name_Input {
+	width: 100%;
+	margin: 10px;
+	border: none;
+	border-bottom: 3px solid #a39da3;
+	background: rgba(255,230,242,0);
+	padding: 10px;
+}
+
+.Name_Input:focus {
+	transition: 1s;
+	outline: none;
+	border-bottom: 3px solid rgba(207,33,70,1);
+}
+
+.Email_Section {
+	width: 100%;
+	margin: 10px;
+	border: none;
+	border-bottom: 3px solid #a39da3;
+	background: rgba(255,230,242,0);
+	padding: 10px;
+}
+
+.Email_Section:focus {
+	transition: 1s;
+	outline: none;
+	border-bottom: 3px solid rgba(207,33,70,1);
+}
+
+.Subject_Input {
+	width: 100%;
+	margin: 10px;
+	border: none;
+	border-bottom: 3px solid #a39da3;
+	background: rgba(255,230,242,0);
+	padding: 10px;
+}
+
+.Subject_Input:focus {
+	transition: 1s;
+	outline: none;
+	border-bottom: 3px solid rgba(207,33,70,1);
+}
+
+.Message_Section{
+	width: 100%;
+	margin: 10px;
+	border: none;
+	border-bottom: 3px solid #a39da3;
+	background: rgba(255,230,242,0);
+	padding: 10px;
+}
+
+.Message_Section:focus {
+	transition: 1s;
+	outline: none;
+	border-bottom: 3px solid rgba(207,33,70,1);
+}
+
+.submitSection {
+	text-align: center;
+	padding-top: 30px;
+	font-family: Nutrifont;
+}
+
+.Submit_Section {
+	padding: 10px;
+	background: linear-gradient(47deg, rgba(207,33,70,1) 0%, rgba(193,195,231,1) 71%);
+}
+
+.Submit_Section:hover {
+	background: rgba(207,33,70,1);
+}
+
+
+
+footer {
+	background: linear-gradient(47deg, rgba(193,195,231,1) 0%, rgba(207,33,70,1) 71%);
+	margin-top: 20px;
+	border-bottom: solid 2px #cf2146;
+	font-family: 'Bree Serif', serif;
+	border-top: solid 2px #cf2146;
+	padding: 30px;
+}
+
+.footer_main {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.footer_text {
+	margin-right: 20px;
+}
+
+.footer_text h4 {
+	font-size: 15px;
+}
+
+
+.footer_logo {
+	margin-top: auto;
+}
+
+.footer_logo > .instagram img {
+	height: 40px;
+	width: 40px;
+	margin-bottom: 5px;
+}
+
+.footer_logo > .facebook img {
+	height: 50px;
+	width: 50px;
+	margin-right: 2px;
+}
+
+.footer_logo> .youtube img {
+	height: 50px;
+	width: 50px;
+}
+
+@media only screen and (max-width: 720px) {
+	footer {
+		padding: 15px;
+	}
+
+	.footer_main {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.footer_logo {
+		padding-top: 10px;
+	}
+}

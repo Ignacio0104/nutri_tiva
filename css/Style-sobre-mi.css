@@ -1,0 +1,154 @@
+@font-face {
+	src: url(../fonts/bobbyjones/Bobby-Jones/Bobby-Jones-Soft.otf);
+	font-family: Nutrifont;
+}
+
+*{ 
+  font-size: 20px;
+ }
+
+body {
+	background: url(../images/sobre-mi.png);
+	background-attachment: fixed;
+	background-size: 100vh 100vh;
+	background-repeat: no-repeat;
+	background-
+}
+
+.header_main {
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	justify-content: flex-end;
+	background: linear-gradient(47deg, rgba(207,33,70,1) 0%, rgba(193,195,231,1) 71%);
+	border-bottom: solid 2px #cf2146;
+	font-family: 'Bree Serif', serif;
+	border-top: solid 2px #cf2146;
+}
+
+
+.header_logo img {
+	width: 60px;
+	height: 60px;
+	border-radius: 3em;
+}
+.header_logo {
+	margin-right: auto;
+	padding: 8px;
+}
+
+.header_links a {
+	text-decoration: none;
+	color: #ed2084;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin: auto;
+}
+
+.header_links a:hover {
+	color: #057ea8;	
+}
+
+
+.main_container {
+	margin-left: 100vh;
+	background-image: url(../images/NUTRI-TIVA-fondo-2.png);
+	background-attachment: fixed;
+	background-size: 100% 100%;;
+}
+
+.description_container {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: auto 15em;
+	grid-template-areas: 
+	"description_text ."
+	"description_cierre description_cierre";
+}
+
+.description_text h1 {
+	font-family: Nutrifont;
+	margin-bottom: 30px;
+}
+
+.description_text p {
+	font-family: 'Kalam', cursive;
+
+}
+
+
+.description_text {
+	grid-area: description_text;
+}
+
+.description_cierre {
+	grid-area: description_cierre;
+	margin-top: 30vh;
+
+}
+
+.description_cierre h3 {
+	font-family: 'Homemade Apple', cursive;
+	font-size: 2em;
+	color: #cf2142;
+}
+
+
+footer {
+	background: linear-gradient(47deg, rgba(193,195,231,1) 0%, rgba(207,33,70,1) 71%);
+	margin-top: 20px;
+	border-bottom: solid 2px #cf2146;
+	font-family: 'Bree Serif', serif;
+	border-top: solid 2px #cf2146;
+	padding: 30px;
+}
+
+.footer_main {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.footer_text {
+	margin-right: 20px;
+}
+
+.footer_text h4 {
+	font-size: 15px;
+}
+
+
+.footer_logo {
+	margin-top: auto;
+}
+
+.footer_logo > .instagram img {
+	height: 40px;
+	width: 40px;
+	margin-bottom: 5px;
+}
+
+.footer_logo > .facebook img {
+	height: 50px;
+	width: 50px;
+	margin-right: 2px;
+}
+
+.footer_logo> .youtube img {
+	height: 50px;
+	width: 50px;
+}
+
+@media only screen and (max-width: 720px) {
+	footer {
+		padding: 15px;
+	}
+
+	.footer_main {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.footer_logo {
+		padding-top: 10px;
+	}
+}

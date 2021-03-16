@@ -1,0 +1,158 @@
+@font-face {
+
+}
+
+*{ 
+  font-size: 20px;
+ }
+
+body {
+	background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(160,150,219,1) 100%);
+}
+
+header {
+	padding-bottom: 20px;
+}
+
+.header_main {
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	justify-content: flex-end;
+	background: linear-gradient(47deg, rgba(207,33,70,1) 0%, rgba(193,195,231,1) 71%);
+	border-bottom: solid 2px #cf2146;
+	font-family: 'Bree Serif', serif;
+	border-top: solid 2px #cf2146;
+}
+
+.header_logo img {
+	width: 60px;
+	height: 60px;
+	border-radius: 3em;
+}
+
+.header_logo {
+	margin-right: auto;
+	padding: 8px;
+}
+
+.header_links a {
+	text-decoration: none;
+	color: #ed2084;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin: auto;
+}
+
+.header_links a:hover {
+	color: #057ea8;	
+}
+
+@media only screen and (max-width: 720px) {
+	.header_main {
+		display: flex;
+		flex-flow: row;
+		align-items: flex-start;
+		
+	}
+
+	.header_links {
+		display: flex;
+		flex-flow: column;
+		justify-content: flex-start;
+	}
+	.header_links a {
+		color: #ed2084;
+		padding: 10px;
+	}
+}
+
+.gallery_main {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-template-rows: auto;
+	grid-gap: 20px;
+	justify-content: space-between;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.gallery_main img {
+	width: 100%;
+	height: 15em;
+	justify-content: space-around;
+	border-radius: 0.5em;
+}
+
+.gallery_main img:hover {
+	opacity: 0.4;
+	transition: opacity .5s;
+}
+
+@media only screen and (max-width: 720px) {
+	.gallery_main img {
+		width: 100%;
+		height: 100%;
+	}
+
+}
+
+
+footer {
+	background: linear-gradient(47deg, rgba(193,195,231,1) 0%, rgba(207,33,70,1) 71%);
+	margin-top: 20px;
+	border-bottom: solid 2px #cf2146;
+	font-family: 'Bree Serif', serif;
+	border-top: solid 2px #cf2146;
+	padding: 30px;
+}
+
+.footer_main {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.footer_text {
+	margin-right: 20px;
+}
+
+.footer_text h4 {
+	font-size: 15px;
+}
+
+
+.footer_logo {
+	margin-top: auto;
+}
+
+.footer_logo > .instagram img {
+	height: 40px;
+	width: 40px;
+	margin-bottom: 5px;
+}
+
+.footer_logo > .facebook img {
+	height: 50px;
+	width: 50px;
+	margin-right: 2px;
+}
+
+.footer_logo> .youtube img {
+	height: 50px;
+	width: 50px;
+}
+
+@media only screen and (max-width: 720px) {
+	footer {
+		padding: 15px;
+	}
+
+	.footer_main {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.footer_logo {
+		padding-top: 10px;
+	}
+}

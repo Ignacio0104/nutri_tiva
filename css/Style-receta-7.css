@@ -1,0 +1,242 @@
+@font-face {
+
+}
+
+*{ 
+  font-size: 20px;
+ }
+
+body {
+	background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(160,150,219,1) 100%)
+}
+
+.header_main {
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	justify-content: flex-end;
+	background: linear-gradient(47deg, rgba(207,33,70,1) 0%, rgba(193,195,231,1) 71%);
+	border-bottom: solid 2px #cf2146;
+	font-family: 'Bree Serif', serif;
+	border-top: solid 2px #cf2146;
+}
+
+
+.header_logo img {
+	width: 60px;
+	height: 60px;
+	border-radius: 3em;
+}
+
+.header_logo {
+	margin-right: auto;
+	padding: 8px;
+}
+
+.header_links a {
+	text-decoration: none;
+	color: #ed2084;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin: auto;
+}
+
+.header_links a:hover {
+	color: #057ea8;	
+}
+
+.receta_main {
+	display: grid;
+	grid-template-rows: auto auto 1fr auto;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: 
+	"receta_nombre receta_nombre"
+	"receta_foto receta_descripcion"
+	"receta_cierre receta_cierre";
+	margin-top: 30px;
+	grid-gap: 20px;
+}
+
+
+
+.receta_nombre_container {
+	padding: 10px;
+	grid-area: receta_nombre;
+	font-family: 'Itim', cursive;
+	background-image: url(../images/fondo-recetas.jpg);
+	background-attachment: fixed;
+	background-size: 100% 100%;
+}
+
+.receta_nombre h3 {
+	font-size: 35px;
+	text-shadow: 5px 3px 5px #fcd300;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	text-align: center;
+}
+
+
+.receta_foto {
+	padding: 20px;
+	grid-area: receta_foto;	
+}
+.receta_foto img {
+	width: 30em;
+	height: 25em;
+	border: solid 2px #cf2146;
+	min-width: 400px;
+	max-height: 700px;
+}
+
+.receta_descripcion {
+	margin: auto;
+	min-width: 350px;
+	min-height: 250px;
+	background-color: white;
+	margin-right: 20px;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px black;
+	margin-left: 20px;
+	background: #e8cae8;
+	padding: 10px;
+	grid-area: receta_descripcion;
+}
+
+.receta_descripcion p {
+	padding: 15px;
+	font-family: 'Architects Daughter', cursive;
+}
+
+.receta_descripcion_lista {
+	padding-bottom: 10px;
+	font-family: 'Architects Daughter', cursive;
+	font-size: 15px;
+	background: #e8cae8;
+}
+
+.receta_descripcion_lista li {
+	margin-left: 20px;
+	list-style: none;
+	padding: 2px;
+
+}
+
+.receta_cierre_container {
+	padding: 20px;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px black;
+	font-family: 'Architects Daughter', cursive;
+	background: #e8cae8;
+	grid-area: receta_cierre;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.receta_cierre_container li {
+	margin-left: 20px;
+	list-style: none;
+	padding: 2px;
+}
+
+
+@media only screen and (max-width: 720px) {
+	.header_main {
+		display: flex;
+		flex-flow: row;
+		align-items: flex-start;
+		
+	}
+
+	.header_links {
+		display: flex;
+		flex-flow: column;
+		justify-content: flex-start;
+	}
+	.header_links a {
+		color: #ed2084;
+		padding: 10px;
+	}
+
+	.receta_main {
+		grid-template-columns: 1fr;
+		grid-template-rows: auto auto auto auto auto;
+		grid-template-areas: 
+		"receta_titulo"
+		"receta_nombre"
+		"receta_foto"
+		"receta_descripcion"
+		"receta_cierre";
+		grid-row-gap: 20px;
+		justify-content: center;
+	}
+
+	.receta_nombre h4 {
+		margin: auto;
+	}
+
+	.receta_foto  {
+		margin: auto;
+	}
+}
+
+
+footer {
+	background: linear-gradient(47deg, rgba(193,195,231,1) 0%, rgba(207,33,70,1) 71%);
+	margin-top: 20px;
+	border-bottom: solid 2px #cf2146;
+	font-family: 'Bree Serif', serif;
+	border-top: solid 2px #cf2146;
+	padding: 30px;
+}
+
+.footer_main {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.footer_text {
+	margin-right: 20px;
+}
+
+.footer_text h4 {
+	font-size: 15px;
+}
+
+
+.footer_logo {
+	margin-top: auto;
+}
+
+.footer_logo > .instagram img {
+	height: 40px;
+	width: 40px;
+	margin-bottom: 5px;
+}
+
+.footer_logo > .facebook img {
+	height: 50px;
+	width: 50px;
+	margin-right: 2px;
+}
+
+.footer_logo> .youtube img {
+	height: 50px;
+	width: 50px;
+}
+
+@media only screen and (max-width: 720px) {
+	footer {
+		padding: 15px;
+	}
+
+	.footer_main {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.footer_logo {
+		padding-top: 10px;
+	}
+}
